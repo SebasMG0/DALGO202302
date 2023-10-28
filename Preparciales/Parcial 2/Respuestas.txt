@@ -1,0 +1,7 @@
+1. Complejidad:
+
+- BFS: O(|v|+|E|) -> En el peor de los casos se recoren todos los ejes y los vértices del grafo.
+
+- Dijsktra (Priority Queue): O((V+E) log V) ->  Esto se debe a que cada vértice y cada arista se procesan una vez en el bucle principal del algoritmo, y las operaciones de inserción y extracción en la cola de prioridad tienen una complejidad logarítmica en el número de vértices. La complejidad espacial del algoritmo es O(V), ya que se almacenan todos los vértices en la cola de prioridad y en las listas de pesos y visitados.
+
+- 

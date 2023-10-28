@@ -29,4 +29,4 @@ g1= [ [(2, 2)],
       [(8, 4), (10, 0)]
 ]
 # Expected Result: [5, 5, 7, 9, 8, 0]
-# print(bellmanFord(g1, 5))
+print(bellmanFord(g1, 5))

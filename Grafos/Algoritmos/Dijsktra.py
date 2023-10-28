@@ -24,12 +24,12 @@ def dijsktra_queue(g:list, po:int):
                 if not s[e[0]]: #Si el eje lleva a un vértice que no ha sido visitado
                     q.put( (w[e[0]], e[0]) ) # Añadir el vértice a la cola
     return w
-
-g= [ [(4, 1), (2, 2)],
-     [(3, 2), (2,3), (3, 4)],
-     [(1, 1), (4, 3), (5, 4)],
+# v= b, peso
+g= [ [(1, 4), (2, 2)],
+     [(2, 3), (3, 2), (4, 3)],
+     [(1, 1), (3, 4), (4, 5)],
      [],
-     [(1, 3)]
-]
+     [(3, 1)] ]
+     
 #Expected Result: [0, 3, 2, 5, 6]
-print(dijsktra(g, 0, 4))
+print(dijsktra_queue(g, 0))
